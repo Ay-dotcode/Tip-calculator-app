@@ -15,27 +15,41 @@
 
 <body>
   <main>
+    <section id="inputs">
+      <label for="billInput">Bill</label>
+      <input type="text" id="billInput" placeholder="0">
 
-    Bill
+      <label for="tipInput">Select Tip %</label>
+      <div id="tipInput">
+        <button>5%</button>
+        <button>10%</button>
+        <button>15%</button>
+        <button>25%</button>
+        <button>50%</button>
+        <input id="custom" type="text" placeholder="Custom">
+      </div>
 
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
+      <label for="peopleInput">Number of People</label>
+      <input type="text" id="peopleInput" placeholder="0">
+    </section>
+    <section id="outputs">
+      <div class="row">
+        <div class="amount">
+          <h1>Tip Amount</h1>
+          <p>/ person</p>
+        </div>
+        <span id="tipAmount">$4.27</span>
+      </div>
+      <div class="row">
+        <div class="amount">
+          <h1> Total </h1>
+          <p>/ person</p>
+        </div>
+        <span id="total">$32.79</span>
+      </div>
 
-    Number of People
-
-    Tip Amount
-    / person
-
-    Total
-    / person
-
-    Reset
-
+      <button type="reset"> Reset</button>
+    </section>
   </main>
 </body>
 

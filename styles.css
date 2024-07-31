@@ -7,4 +7,34 @@
 body {
     font-family: 'Space Mono', monospace;
     font-weight: 700px;
+    background-color: hsl(185, 41%, 84%);
+}
+
+main {
+    display: flex;
+    background-color: white;
+    padding: 2rem;
+}
+
+#outputs {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+}
+
+label {
+    display: block;
+}
+
+#tipInput {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+#custom{
+    width: 50px;
 }
