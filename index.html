@@ -8,6 +8,7 @@
   <title>Tip calculator app</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="styles-outputs.css">
+  <script src="app.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
@@ -25,16 +26,18 @@
       <div id="tipInput">
         <button type="button">5%</button>
         <button type="button">10%</button>
-        <button type="button">15%</button>
+        <button type="button" id="active">15%</button>
         <button type="button">25%</button>
         <button type="button">50%</button>
         <input id="custom" type="text" placeholder="Custom">
       </div>
-    <div>
-      <label for="peopleInput">Number of People</label>
-      <span id="error"></span>
-    </div>
-      <input type="text" id="peopleInput" placeholder="0">
+      <div id="noPeople">
+        <div>
+          <label for="peopleInput">Number of People</label>
+          <span id="error">Can't be zero</span>
+        </div>
+        <input type="text" id="peopleInput" placeholder="0">
+      </div>
     </section>
 
     <section id="outputs">

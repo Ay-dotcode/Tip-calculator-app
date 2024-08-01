@@ -46,6 +46,7 @@
     color: hsl(183, 100%, 15%);
     cursor: pointer;
 }
+
 #resetBtn:hover {
-    background-color: hsl(172, 67%, 55%);
+    background-color: hsl(172, 77%, 75%);
 }

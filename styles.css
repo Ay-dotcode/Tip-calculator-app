@@ -42,6 +42,7 @@ input {
     border-radius: 3px;
     letter-spacing: 1px;
     background-color: hsl(189, 41%, 97%);
+    cursor: pointer;
 }
 
 input::placeholder {
@@ -87,7 +88,7 @@ input:focus {
 }
 
 #tipInput button:hover {
-    background-color: hsl(172, 67%, 45%);
+    background-color: hsl(172, 77%, 75%);
     color: hsl(183, 100%, 15%);
 }
 
@@ -102,8 +103,28 @@ input:focus {
     opacity: 0.8;
 }
 
+.error div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
 #peopleInput {
     background: url('images/icon-person.svg') no-repeat;
     background-position: 16px center;
     background-color: hsl(189, 41%, 97%);
+}
+
+.error span {
+    color: hsl(25, 100%, 45%);
+    font-size: 0.8rem;
+    display: block;
+}
+
+.error input {
+    outline: 2px solid hsl(25, 100%, 45%);
+}
+
+#error {
+    display: none;
 }
