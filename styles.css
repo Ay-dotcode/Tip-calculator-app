@@ -83,26 +83,27 @@ input:focus {
     border-radius: 4px;
     border: none;
     height: 40px;
+    cursor: pointer;
 }
 
 #tipInput button:hover {
-    background-color: hsl(172, 67%, 70%);
+    background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
 }
 
-#tipInput input {
+#custom {
     height: 40px;
     width: 92px;
     color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+
+#custom::placeholder {
+    opacity: 0.8;
 }
 
 #peopleInput {
     background: url('images/icon-person.svg') no-repeat;
     background-position: 16px center;
     background-color: hsl(189, 41%, 97%);
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
 }

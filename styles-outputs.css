@@ -1,5 +1,51 @@
 #outputs {
+    display: flex;
+    flex-direction: column;
     background-color: hsl(183, 100%, 15%);
     border-radius: 12px;
     padding: 1.5rem;
+}
+
+.row {
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.amount {
+    color: white;
+}
+
+.amount h1 {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.amount p {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: hsl(184, 14%, 56%);
+}
+
+#tipAmount,
+#total {
+    color: hsl(172, 67%, 45%);
+    font-size: 2.5rem;
+}
+
+#resetBtn {
+    border: none;
+    margin-top: auto;
+    padding: 0.7rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    font-family: 'space mono', monospace;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
+}
+#resetBtn:hover {
+    background-color: hsl(172, 67%, 55%);
 }
