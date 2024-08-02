@@ -75,8 +75,6 @@ input:focus {
 }
 
 #tipInput button {
-    background-color: hsl(183, 100%, 15%);
-    color: white;
     font-size: 1.2rem;
     font-weight: 700;
     font-family: 'space mono', monospace;
@@ -85,6 +83,16 @@ input:focus {
     border: none;
     height: 40px;
     cursor: pointer;
+}
+
+#tipInput button:not(.active) {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+}
+
+#tipInput button.active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
 }
 
 #tipInput button:hover {
@@ -122,9 +130,4 @@ input:focus {
 
 .error input {
     outline: 2px solid hsl(25, 100%, 45%);
-}
-
-.active {
-    background-color: hsl(172, 67%, 45%);
-    color: hsl(183, 100%, 15%);
 }

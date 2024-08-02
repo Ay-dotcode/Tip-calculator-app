@@ -4,11 +4,13 @@ const billInput = document.getElementById('billInput');
 const peopleInput = document.getElementById('peopleInput');
 const resetBtn = document.getElementById('resetBtn');
 const errorMsg = document.getElementById('errorMsg');
+const custom = document.getElementById('custom');
 
 resetBtn.disabled = true;
 
 billInput.addEventListener('input', isValid);
 peopleInput.addEventListener('input', isValid);
+tipInput.addEventListener('click', tipPercent);
 
 function isValid() {
     // if bill or people is invalid, reset button is disabled
@@ -43,6 +45,10 @@ function billValid() {
     else if (billInput.value > 0)
         return false;
 }
-tipInput.addEventListener('click', function (e) {
+
+function tipPercent(e) {
+    for (const btn of tipInput.children)
+        btn.classList.remove('active');
+    custom.value = '';
     e.target.classList.add('active');
-});
+}
