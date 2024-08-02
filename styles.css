@@ -118,13 +118,12 @@ input:focus {
 .error span {
     color: hsl(25, 100%, 45%);
     font-size: 0.8rem;
-    display: block;
 }
 
 .error input {
     outline: 2px solid hsl(25, 100%, 45%);
 }
 
-#error {
+.noError span {
     display: none;
 }

@@ -1,9 +1,9 @@
 const active = document.getElementById('active');
 const noPeople = document.getElementById('noPeople');
 
-// noPeople.classList.add('error'); // Add error class to noPeople
+// noPeople.classList.replace('noError', 'error') // Add error id to noPeople
 
-addActive(active);
+// addActive(active); // making a buttn active
 
 function addActive(elem) {
     elem.style.backgroundColor = 'hsl(172, 67%, 45%)'
