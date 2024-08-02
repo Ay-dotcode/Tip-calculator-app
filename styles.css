@@ -123,7 +123,3 @@ input:focus {
 .error input {
     outline: 2px solid hsl(25, 100%, 45%);
 }
-
-.noError span {
-    display: none;
-}
