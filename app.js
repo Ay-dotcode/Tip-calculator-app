@@ -1,4 +1,4 @@
-const active = document.getElementById('active');
+const tipInput = document.getElementById('tipInput');
 const noPeople = document.getElementById('noPeople');
 const billInput = document.getElementById('billInput');
 const peopleInput = document.getElementById('peopleInput');
@@ -43,8 +43,6 @@ function billValid() {
     else if (billInput.value > 0)
         return false;
 }
-
-function addActive(elem) {
-    elem.style.backgroundColor = 'hsl(172, 67%, 45%)'
-    elem.style.color = 'hsl(183, 100%, 15%)'
-}
+tipInput.addEventListener('click', function (e) {
+    e.target.classList.add('active');
+});

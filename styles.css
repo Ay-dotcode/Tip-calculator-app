@@ -123,3 +123,8 @@ input:focus {
 .error input {
     outline: 2px solid hsl(25, 100%, 45%);
 }
+
+.active {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
