@@ -68,7 +68,7 @@ input:focus {
 }
 
 #tipInput {
-    padding: 0.7rem;
+    margin: 0.7rem;
     display: grid;
     gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
