@@ -20,6 +20,8 @@ resetBtn.addEventListener('click', reset);
 function isValid() {
     if (peopleValid() || billValid() || tipValid()) {
         resetBtn.disabled = true;
+        tipAmount.innerText = `$0.00`;
+        total.innerText = `$0.00`;
     } else {
         resetBtn.disabled = false;
         calculate();
