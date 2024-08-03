@@ -1,1 +1,5 @@
-@media (min-width: 55em) {}
+@media (max-width: 50em) {
+    main {
+        flex-direction: column;
+    }
+}
