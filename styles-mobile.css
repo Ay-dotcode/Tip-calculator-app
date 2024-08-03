@@ -1,5 +1,22 @@
 @media (max-width: 50em) {
     main {
         flex-direction: column;
+        width: 375px;
+    }
+
+    #tipInput {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #custom {
+        width: 100%;
+    }
+
+    #inputs {
+        margin-bottom: 2rem;
+    }
+
+    .row {
+        width: 100%;
     }
 }
